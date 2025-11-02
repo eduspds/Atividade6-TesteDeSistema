@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Atividade6,com.example,App,7,0,0,0,3,0,2,0,2,0
+Atividade6,com.example.applications,ProductApplication,0,22,0,0,0,9,0,4,0,4
+Atividade6,com.example.entities,Product,65,15,0,0,17,6,10,1,10,1
+Atividade6,com.example.services,ProductService,138,0,6,0,28,0,10,0,7,0

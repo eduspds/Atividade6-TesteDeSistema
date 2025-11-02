@@ -1,0 +1,4 @@
+com\example\applications\ProductApplication.class
+com\example\services\ProductService.class
+com\example\App.class
+com\example\entities\Product.class

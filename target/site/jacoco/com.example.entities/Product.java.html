@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Product.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Atividade6</a> &gt; <a href="index.source.html" class="el_package">com.example.entities</a> &gt; <span class="el_source">Product.java</span></div><h1>Product.java</h1><pre class="source lang-java linenums">package com.example.entities;
+
+public class Product {
+    private int id;
+    private String description;
+    private float price;
+    private String image;
+
+<span class="fc" id="L9">    public Product(int id, String description, float price, String image) {</span>
+<span class="fc" id="L10">        this.id = id;</span>
+<span class="fc" id="L11">        this.description = description;</span>
+<span class="fc" id="L12">        this.price = price;</span>
+<span class="fc" id="L13">        this.image = image;</span>
+<span class="fc" id="L14">    }</span>
+
+    public int getId() {
+<span class="nc" id="L17">        return id;</span>
+    }
+
+    public void setId(int id) {
+<span class="nc" id="L21">        this.id = id;</span>
+<span class="nc" id="L22">    }</span>
+
+    public String getDescription() {
+<span class="nc" id="L25">        return description;</span>
+    }
+
+    public void setDescription(String description) {
+<span class="nc" id="L29">        this.description = description;</span>
+<span class="nc" id="L30">    }</span>
+
+    public float getPrice() {
+<span class="nc" id="L33">        return price;</span>
+    }
+
+    public void setPrice(float price) {
+<span class="nc" id="L37">        this.price = price;</span>
+<span class="nc" id="L38">    }</span>
+
+    public String getImage() {
+<span class="nc" id="L41">        return image;</span>
+    }
+
+    public void setImage(String imagePath) {
+<span class="nc" id="L45">        this.image = imagePath;</span>
+<span class="nc" id="L46">    }</span>
+
+    public float sellProduct(int quantity) {
+<span class="nc" id="L49">        return this.price * quantity;</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="nc" id="L54">        String formatText = &quot;%-10s %-20s %-20s%n&quot;;</span>
+
+<span class="nc" id="L56">        return String.format(formatText,</span>
+<span class="nc" id="L57">                this.id,</span>
+                this.description,
+<span class="nc" id="L59">                String.format(&quot;$ %.2f&quot;, this.price));</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
