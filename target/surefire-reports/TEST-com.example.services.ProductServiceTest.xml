@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.applications.ProductApplicationTest" time="3.212" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.services.ProductServiceTest" time="0.222" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -58,14 +58,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="deveSalvarAImagemCorretamente" classname="com.example.applications.ProductApplicationTest" time="3.032">
-    <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
-WARNING: A Java agent has been loaded dynamically (C:\Users\eduar\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.7\byte-buddy-agent-1.17.7.jar)
-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-WARNING: Dynamic loading of agents will be disallowed by default in a future release
-]]></system-err>
-  </testcase>
-  <testcase name="deveAtualizarAImagemCorretamente" classname="com.example.applications.ProductApplicationTest" time="0.023"/>
-  <testcase name="deveRemoverAImagemCorretamente" classname="com.example.applications.ProductApplicationTest" time="0.01"/>
+  <testcase name="deveProcessarMultiplasRemocoes" classname="com.example.services.ProductServiceTest" time="0.036"/>
+  <testcase name="updateDeveExecutarMesmoSeSaveFalhar" classname="com.example.services.ProductServiceTest" time="0.008"/>
+  <testcase name="deveSalvarAImagemCorretamente" classname="com.example.services.ProductServiceTest" time="0.026"/>
+  <testcase name="deveAtualizarAImagemCorretamente" classname="com.example.services.ProductServiceTest" time="0.023"/>
+  <testcase name="deveObterCaminhoImagemPorId" classname="com.example.services.ProductServiceTest" time="0.055"/>
+  <testcase name="naoDeveSalvarQuandoArquivoNaoExiste" classname="com.example.services.ProductServiceTest" time="0.022"/>
+  <testcase name="deveProcessarMultiplosSalvamentos" classname="com.example.services.ProductServiceTest" time="0.02"/>
+  <testcase name="deveRemoverAImagemCorretamente" classname="com.example.services.ProductServiceTest" time="0.004"/>
 </testsuite>
